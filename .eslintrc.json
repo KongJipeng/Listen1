@@ -8,13 +8,15 @@
     ],
     "rules": {
         "camelcase": "off",
-        "linebreak-style": "off"
+        "linebreak-style": "off",
+        "no-global-assign": ["error", { "exceptions": ["module"] }]
     },
     "globals": {
         "axios": "readonly",
         "window": "readonly",
         "browser": "readonly",
-        "chrome": "readonly"
+        "chrome": "readonly",
+        "module": "writable"
     },
     "env": {
         "browser": true,
